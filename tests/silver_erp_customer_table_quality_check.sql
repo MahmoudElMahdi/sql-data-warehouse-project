@@ -1,8 +1,19 @@
 /*
-	Data Checking and Cleansing Steps:
-  1- Check for unwanted Characters
-  2- Check data types.
-	2- Check Data Consistency and Standardization.
+	==================================================================================
+	Quality Checks
+	==================================================================================
+	Script Purpose:
+		This script performs various quality checks for data consistency, accuracy,
+	 	and standardization across the 'silver' schema. It includes checks for:
+		- Null or duplicated primary keys.
+		- Unwanted spaces in string fields.
+		- Data standardization and consistency.
+		- Invalid date ranges and orders.
+		- Data consistency between related fields.
+	Usage Notes:
+		- Run these checks after loading the Silver Layer.
+		- Investigate and resolve any discrepancies found during the checks.
+	==================================================================================
 */
 
 SELECT * FROM bronze.erp_cust_az12
