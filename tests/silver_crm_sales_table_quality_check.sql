@@ -1,10 +1,19 @@
 /*
-	Data Checking and Cleansing Steps:
-  1- Check for unwanted Spaces
-	2- Check For Duplicates & Nulls in Primary Key.
-	3- Check integrity with product and customer tables
-	4- Check for Invalid Dates.
-  5- Converting INT to DATE
+	==================================================================================
+	Quality Checks
+	==================================================================================
+	Script Purpose:
+		This script performs various quality checks for data consistency, accuracy,
+	 	and standardization across the 'silver' schema. It includes checks for:
+		- Null or duplicated primary keys.
+		- Unwanted spaces in string fields.
+		- Data standardization and consistency.
+		- Invalid date ranges and orders.
+		- Data consistency between related fields.
+	Usage Notes:
+		- Run these checks after loading the Silver Layer.
+		- Investigate and resolve any discrepancies found during the checks.
+	==================================================================================
 */
 -- 1- Check white space
 -- sls_ord_num
